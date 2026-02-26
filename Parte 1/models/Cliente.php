@@ -30,7 +30,7 @@ class Cliente
 
     public function update($id, $nom, $email,$telefono) {
         $stmt = $this->db->prepare("UPDATE clientes SET nombre = ?, email = ?, telefono = ? WHERE id_cliente = ?");
-        return $stmt->execute([$nom, $email, $telefono]);
+        return $stmt->execute([$nom, $email, $telefono, $id]);
     }
 
     public function delete($id) {
