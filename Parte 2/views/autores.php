@@ -1,5 +1,5 @@
 <h1>Autores</h1>
-<a href="index.php?controller=autores&action=create">Agregar Autor</a>
+<a href="frontController.php?controller=autores&action=create">Agregar Autor</a>
 <table>
     <tr>
         <th>ID</th>
@@ -13,8 +13,8 @@
             <td><?= $autor['nombre'] ?></td>
             <td><?= $autor['fecha_nacimiento'] ?></td>
             <td>
-                <a href="index.php?controller=autores&action=edit&id=<?= $autor['id_autor'] ?>">Editar</a> |
-                <a href="index.php?controller=autores&action=delete&id=<?= $autor['id_autor'] ?>" onclick="return confirm('¿Eliminar este autor?')">Eliminar</a>
+                <a href="frontController.php?controller=autores&action=edit&id=<?= $autor['id_autor'] ?>">Editar</a> |
+                <a href="frontController.php?controller=autores&action=delete&id=<?= $autor['id_autor'] ?>" onclick="return confirm('¿Eliminar este autor?')">Eliminar</a>
             </td>
         </tr>
     <?php endforeach; ?>

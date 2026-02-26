@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Listado de Libros</h1>
-    <a href="index.php?controller=libros&action=create">Agregar Libro</a>
+    <a href="frontController.php?controller=libros&action=create">Agregar Libro</a>
     <table>
         <tr>
             <th>ID</th>
@@ -30,8 +30,8 @@
                 <td>$<?= number_format($libro['precio'], 2) ?></td>
                 <td><?= $libro['nombre_autor'] ?></td>
                 <td>
-                    <a href="index.php?controller=libros&action=edit&id=<?= $libro['id_libro'] ?>">Editar</a> |
-                    <a href="index.php?controller=libros&action=delete&id=<?= $libro['id_libro'] ?>" onclick="return confirm('¿Eliminar este libro?')">Eliminar</a>
+                    <a href="frontController.php?controller=libros&action=edit&id=<?= $libro['id_libro'] ?>">Editar</a> |
+                    <a href="frontController.php?controller=libros&action=delete&id=<?= $libro['id_libro'] ?>" onclick="return confirm('¿Eliminar este libro?')">Eliminar</a>
                 </td>
             </tr>
         <?php endforeach; ?>
