@@ -37,4 +37,6 @@ class Autor
         $stmt = $this->db->prepare("DELETE FROM autores WHERE id_autor = ?");
         return $stmt->execute([$id]);
     }
+
+
 }
