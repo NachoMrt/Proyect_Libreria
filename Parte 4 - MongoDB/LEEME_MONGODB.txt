@@ -1,0 +1,7 @@
+ATENCIÓN!!!
+
+Este es el leeme de MongoDB
+
+- El index incial enlaza a los index/view de cada tabla
+
+- Al crear introducir un ID_"tabla" adecuado, que no exista, ya que no aplica el auto_increment de xampp en MongoDB

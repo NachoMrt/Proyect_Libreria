@@ -16,6 +16,7 @@ $cursor_clientes = $coleccion_Clientes->find();
 </head>
 <body>
   <main>
+    <a href="../index.php"> Volver a Inicio </a>
     <h2> Búsqueda de Cliente </h2>
     <form method="POST">
       ID del cliente: <input type="number" name="id_cliente" required><br><br>
@@ -35,7 +36,7 @@ $cursor_clientes = $coleccion_Clientes->find();
     ?>
     <br>
     <h2> Listado de Clientes </h2>
-    <a href="create.php"> Añadir cliente </a> | <a href="../index.php"> Inicio </a>
+    <a href="create.php"> Añadir cliente </a> 
     <br><br>
 
     <?php foreach ($cursor_clientes as $cliente): ?>

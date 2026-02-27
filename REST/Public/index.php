@@ -7,7 +7,7 @@ require_once __DIR__ . '/../app/Core/Router.php';
 
 $method = $_SERVER['REQUEST_METHOD'];   // Obtiene el método HTTP de la petición: GET, POST, PUT o DELETE.
 $uri = $_SERVER['REQUEST_URI'];   // Obtiene la URL completa que se ha llamado, desde el host en adelante.
-$uri = preg_replace('#^/Certificado/01.Git/Libreria/Proyect_Libreria/API/public(/index\.php)?#', '', $uri);
+$uri = preg_replace('#^/Certificado/01.Git/Libreria/Proyect_Libreria/REST/public(/index\.php)?#', '', $uri);
 /* Quita la parte de la carpeta del proyecto y index.php de la URL.
     Resultado: solo queda la ruta relativa de tu API, por ejemplo: usuarios o usuarios/1.
     Esto hace que el Router pueda comparar correctamente $parts[0] == 'usuarios'. 

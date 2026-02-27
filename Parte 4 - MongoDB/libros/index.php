@@ -16,6 +16,7 @@ $cursor_libros = $coleccion_Libros->find();
 </head>
 <body>
   <main>
+    <a href="../index.php"> Volver a Inicio </a>
     <h2> Búsqueda por ID de Libro </h2>
     <form method="POST">
       ID del libro: <input type="number" name="id_libro" required>
@@ -35,7 +36,7 @@ $cursor_libros = $coleccion_Libros->find();
     ?>
     <br>
     <h2> Listado de Biblioteca </h2>
-    <a href="create.php"> + Añadir nuevo libro </a> | <a href="../index.php"> Inicio </a>
+    <a href="create.php">Añadir nuevo libro </a>
     <br><br>
 
     <?php foreach ($cursor_libros as $libro): ?>

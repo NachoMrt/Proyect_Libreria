@@ -1,0 +1,15 @@
+ATENCIÓN!!!!
+
+Esta es la API REST solo para Cliente de Libreria
+
+- vistaAPI es el index vista de la API REST
+
+- Dentro de Public esta el index enrutador de endpoints
+
+- CAMBIAR adecuadamente el endpoin en public/index y en vistaAPI que lleve al index de Public 
+  para que funcione adecuadamente. Como:
+
+  Certificado/..cambiar la direcion../REST/public
+
+- Importar el SQL para que se muestren resultados
+

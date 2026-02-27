@@ -34,8 +34,9 @@ $cursor = $coleccion_Autores->find();
 
 <body>
   <main>
+    <a href="../index.php"> Volver a Inicio </a>
     <h2> Autores </h2>
-    <a href="create.php"> Añadir Autor </a> | <a href="../index.php"> Inicio </a>
+    <a href="create.php"> Añadir Autor </a> 
     <br><br>
     <?php foreach ($cursor as $autor): ?>
       <div class="card_autor">

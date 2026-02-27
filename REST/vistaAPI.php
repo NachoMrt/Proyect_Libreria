@@ -13,7 +13,7 @@
   <ul id="listaClientes"></ul>
 
   <script>
-    fetch('http://localhost/Certificado/01.Git/Libreria/Proyect_Libreria/API/public/index.php/clientes')
+    fetch('http://localhost/Certificado/01.Git/Libreria/Proyect_Libreria/REST/public/index.php/clientes')
       .then(response => response.json())
       .then(data => {
         const lista = document.getElementById('listaClientes');
@@ -36,7 +36,7 @@
     document.getElementById("formCrearCliente").addEventListener("submit", function(e) {
       e.preventDefault();
 
-      fetch('http://localhost/Certificado/01.Git/Libreria/Proyect_Libreria/API/public/index.php/clientes', {
+      fetch('http://localhost/Certificado/01.Git/Libreria/Proyect_Libreria/REST/public/index.php/clientes', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -71,7 +71,7 @@
       e.preventDefault();
       const id = this.id_cliente.value;
 
-      fetch(`http://localhost/Certificado/01.Git/Libreria/Proyect_Libreria/API/public/index.php/clientes/${id}`, {
+      fetch(`http://localhost/Certificado/01.Git/Libreria/Proyect_Libreria/REST/public/index.php/clientes/${id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'
@@ -100,7 +100,7 @@
     function eliminarCliente() {
       const id = document.getElementById("idEliminarCliente").value;
 
-      fetch(`http://localhost/Certificado/01.Git/Libreria/Proyect_Libreria/API/public/index.php/clientes/${id}`, {
+      fetch(`http://localhost/Certificado/01.Git/Libreria/Proyect_Libreria/REST/public/index.php/clientes/${id}`, {
           method: 'DELETE'
         })
         .then(response => response.json())
