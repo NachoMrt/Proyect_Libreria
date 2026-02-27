@@ -34,22 +34,20 @@
                         <label>Email:</label>
                         <input type="email" name="email_edit" placeholder="Nuevo email">
                         <label>Fecha de nacimiento:</label>
-                        <input type="text" name="fecha_nacimiento_edit" placeholder="YYYY-MM-DD">
-                        <label>Teléfono:</label>
                         <input type="text" name="telefono_edit" placeholder="Nuevo telefono">
                         <button type="submit">Actualizar Datos</button>
                     </form>
                 </div>
 
                 <div class="delete-box">
-                    <h2>Eliminar Paciente</h2>
+                    <h2>Eliminar Cliente</h2>
                     <input type="number" id="id_pacienteDelete" placeholder="ID del paciente" style="max-width: 200px;">
-                    <button class="btn-delete-action" onclick="eliminarPaciente()">Eliminar Permanentemente</button>
+                    <button class="btn-delete-action" onclick="eliminar cliente()">Eliminar Permanentemente</button>
                 </div>
             </div>
 
             <div class="list-container">
-                <h2>Lista de Pacientes Registrados</h2>
+                <h2>Lista de Clientes Registrados</h2>
                 <div id="containerPaciente"></div>
             </div>
         </div>
